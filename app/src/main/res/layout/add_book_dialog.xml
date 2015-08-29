@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/a"
+        android:gravity="center"
+        android:background="@color/red"
+        android:src="@drawable/icon_book"
+        android:scaleType="fitCenter" />
+
+    <EditText
+        android:layout_width="220dip"
+        android:layout_height="wrap_content"
+        android:id="@+id/book_title"
+        android:layout_below="@+id/a"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="18sp"
+        android:textColor="#ff000000"
+        android:layout_centerHorizontal="true"
+        android:gravity="left"
+        android:maxLines="1"
+        android:hint="Title"/>
+
+    <EditText
+        android:layout_width="220dip"
+        android:layout_height="wrap_content"
+        android:id="@+id/book_author"
+        android:layout_below="@+id/book_title"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="18sp"
+        android:textColor="#ff000000"
+        android:layout_centerHorizontal="true"
+        android:gravity="left"
+        android:maxLines="1"
+        android:hint="Author" />
+
+    <EditText
+        android:layout_width="220dip"
+        android:layout_height="wrap_content"
+        android:id="@+id/book_bookmark"
+        android:layout_below="@+id/book_author"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="30dp"
+        android:textSize="18sp"
+        android:textColor="#ff000000"
+        android:layout_centerHorizontal="true"
+        android:gravity="left"
+        android:maxLines="1"
+        android:inputType="numberDecimal"
+        android:hint="Page" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Bookmark"
+        android:id="@+id/btn_add"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@drawable/button"
+        android:layout_below="@+id/book_bookmark"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffffff" />
+    </RelativeLayout>

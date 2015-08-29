@@ -4,6 +4,8 @@ import java.util.List;
 
 /**
  * Created by Matthias on 29.08.2015.
+ * Link between Model and View. Asks Model to retrieve all books. Model notifies Presenter via
+ * OnFinishedListener
  */
 public class MainPresenter implements OnFinishedListener {
     private MainView mainView;
@@ -15,8 +17,13 @@ public class MainPresenter implements OnFinishedListener {
         mainModel.retrieveBooks();
     }
 
+    public void actionAddBook() {
+        mainView.showAddBookDialog();
+    }
+
     @Override
     public void onFinished(List<Book> books) {
         mainView.setBooks(books);
     }
+
 }

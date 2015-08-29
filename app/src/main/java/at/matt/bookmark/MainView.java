@@ -9,4 +9,5 @@ import java.util.List;
 public interface MainView {
     public void addBook(Book book);
     public void setBooks(List<Book> books);
+    public void showAddBookDialog();
 }
